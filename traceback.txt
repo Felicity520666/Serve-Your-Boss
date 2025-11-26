@@ -1,0 +1,23 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 41, in script
+    jump visit
+renpy.script.LabelNotFound: could not find label 'visit'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 41, in script
+    jump visit
+  File "renpy/ast.py", line 1928, in execute
+    rv = renpy.game.script.lookup(target)
+         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "renpy/script.py", line 1161, in lookup
+    raise LabelNotFound(original)
+renpy.script.LabelNotFound: could not find label 'visit'.
+
+macOS-15.5-arm64-arm-64bit arm64
+Ren'Py 8.4.1.25072401
+Serve Your Boss 1.0
+Fri Nov  7 14:32:36 2025
